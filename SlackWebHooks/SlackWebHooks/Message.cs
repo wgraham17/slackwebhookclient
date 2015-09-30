@@ -63,9 +63,7 @@ namespace SlackWebHooks
                     IconUrl = null;
                 }
                 else
-                {
                     throw new ArgumentOutOfRangeException(nameof(icon), "Icon must be either valid url or ':emoji:'.");
-                }
             }
             else
             {
@@ -77,18 +75,12 @@ namespace SlackWebHooks
             if (!string.IsNullOrWhiteSpace(channel))
             {
                 if (channel.IsValidChannel())
-                {
                     Channel = channel;
-                }
                 else
-                {
                     throw new ArgumentOutOfRangeException(nameof(channel), "Channel must start with either '#' or '@'.");
-                }
             }
             else
-            {
                 Channel = null;
-            }
         }
     }
 }

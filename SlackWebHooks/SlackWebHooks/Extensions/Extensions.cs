@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.RegularExpressions;
 
 namespace SlackWebHooks.Extensions
 {
@@ -30,6 +31,17 @@ namespace SlackWebHooks.Extensions
         public static bool IsValidChannel(this string channel)
         {
             return channel.StartsWith("#") || channel.StartsWith("@");
+        }
+
+        /// <summary>
+        /// Checks if a string is a valid hex color (#RRGGBB).
+        /// </summary>
+        public static bool IsValidHexColor(this string color)
+        {
+            const string rgx = "^#[a-fA-F0-9]{6}$";
+            var regex = new Regex(rgx);
+            var match = regex.Match(color);
+            return match.Success;
         }
     }
 }

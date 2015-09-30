@@ -51,9 +51,11 @@ namespace SlackWebHooks.Tests
             public void Test()
             {
                 var field1 = new Field("title 1", "value 1", false);
-                var field2 = new Field("title 2", "value 2", false);
-                var attachment = new Attachment("fallback", new [] {field1, field2}, "text", "pretext", "bad");
-                var messageWithAttachments = new MessageWithAttachments(new[] { attachment});
+                var attachment1 = new Attachment("fallback", new [] {field1}, "goog", "pretext", "good");
+                var attachment2 = new Attachment("fallback", new[] { field1 }, "warn", "pretext", "warning");
+                var attachment3 = new Attachment("fallback", new[] { field1 }, "dager", "pretext", "danger");
+                var attachment4 = new Attachment("fallback", new[] { field1 }, "colur", "pretext", "#0000FF");
+                var messageWithAttachments = new MessageWithAttachments(new[] { attachment1, attachment2, attachment3, attachment4});
                 var client = new WebHookClient(HookUrl);
                 client.SendMessage(messageWithAttachments);
             }

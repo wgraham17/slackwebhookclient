@@ -1,6 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using JetBrains.Annotations;
 using Newtonsoft.Json;
+using SlackWebHooks.Extensions;
 
 namespace SlackWebHooks
 {
@@ -37,6 +39,10 @@ namespace SlackWebHooks
     /// </summary>
     public class Attachment
     {
+        private const string Good = "good";
+        private const string Warning = "warning";
+        private const string Danger = "danger";
+
         /// <summary>
         /// Required text summary of the attachment that is shown by clients that understand attachments but choose not to show them.
         /// </summary>
@@ -76,7 +82,23 @@ namespace SlackWebHooks
             Fields = fields;
             Text = text;
             Pretext = pretext;
-            Color = color;
+
+            // check color
+            if (!string.IsNullOrWhiteSpace(color))
+            {
+                if (Good.Equals(color, StringComparison.InvariantCultureIgnoreCase))
+                    Color = Good;
+                else if (Warning.Equals(color, StringComparison.InvariantCultureIgnoreCase))
+                    Color = Warning;
+                else if (Danger.Equals(color, StringComparison.InvariantCultureIgnoreCase))
+                    Color = Danger;
+                else if (color.IsValidHexColor())
+                    Color = color;
+                else
+                    throw new ArgumentOutOfRangeException(nameof(color), "Color must be either 'good', 'bad', or a hex color in the form of '#RRGGBB'.");
+            }
+            else
+                Color = null;
         }
     }
 
