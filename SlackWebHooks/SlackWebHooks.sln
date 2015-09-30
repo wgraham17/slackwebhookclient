@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlackWebHooks.Tests", "SlackWebHooks.Tests\SlackWebHooks.Tests.csproj", "{5FCD2F2D-BF8D-4268-8DDC-FBD0CBE5962F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlackWebHooks", "SlackWebHooks\SlackWebHooks.csproj", "{D1746C04-DD50-4087-B6D4-AE9283A07423}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5FCD2F2D-BF8D-4268-8DDC-FBD0CBE5962F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FCD2F2D-BF8D-4268-8DDC-FBD0CBE5962F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FCD2F2D-BF8D-4268-8DDC-FBD0CBE5962F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FCD2F2D-BF8D-4268-8DDC-FBD0CBE5962F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1746C04-DD50-4087-B6D4-AE9283A07423}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1746C04-DD50-4087-B6D4-AE9283A07423}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1746C04-DD50-4087-B6D4-AE9283A07423}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1746C04-DD50-4087-B6D4-AE9283A07423}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
