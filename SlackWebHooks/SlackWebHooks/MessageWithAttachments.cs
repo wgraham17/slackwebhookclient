@@ -4,14 +4,26 @@ using Newtonsoft.Json;
 
 namespace SlackWebHooks
 {
+    /// <summary>
+    /// Message that can be sent to a slack channel via Incoming WebHook integrations.
+    /// </summary>
     public class MessageWithAttachments : Message
     {
+        /// <summary>
+        /// Array of attachments to add to the message.
+        /// </summary>
         [JsonProperty(PropertyName = "attachments", Required = Required.Always)]
         public IReadOnlyList<Attachment> Attachments { get; }
 
+        /// <summary>
+        /// Optional text that will be posted to the channel before the attachments.
+        /// </summary>
         [JsonProperty(PropertyName = "text", NullValueHandling = NullValueHandling.Ignore)]
         public override string Text { get; }
 
+        /// <summary>
+        /// Initializes a message with the given parameters.
+        /// </summary>
         [JsonConstructor]
         public MessageWithAttachments([NotNull] IReadOnlyList<Attachment> attachments, string text = null, string username = null, string icon = null, string channel = null) : base(text?? "n/a", username, icon, channel)
         {
@@ -20,6 +32,9 @@ namespace SlackWebHooks
         }
     }
 
+    /// <summary>
+    /// Attachment to add to the bottom of messages.
+    /// </summary>
     public class Attachment
     {
         /// <summary>
@@ -52,6 +67,9 @@ namespace SlackWebHooks
         [JsonProperty(PropertyName = "fields", Required = Required.Always)]
         public IReadOnlyList<Field> Fields { get; } 
 
+        /// <summary>
+        /// Initializes an attachment with the given parameters.
+        /// </summary>
         public Attachment([NotNull] string fallback, IReadOnlyList<Field> fields, string text = null, string pretext = null, string color = null)
         {
             Fallback = fallback;
@@ -62,6 +80,9 @@ namespace SlackWebHooks
         }
     }
 
+    /// <summary>
+    /// Field that displays text with a title on an attachment.
+    /// </summary>
     public class Field
     {
         /// <summary>
@@ -82,6 +103,9 @@ namespace SlackWebHooks
         [JsonProperty(PropertyName = "short", NullValueHandling = NullValueHandling.Ignore)]
         public bool? Short { get; }
 
+        /// <summary>
+        /// Initializes a field with the given parameters.
+        /// </summary>
         public Field(string title, string value, bool? @short = null)
         {
             Title = title;

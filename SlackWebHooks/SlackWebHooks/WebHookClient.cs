@@ -7,21 +7,35 @@ using SlackWebHooks.Interfaces;
 
 namespace SlackWebHooks
 {
+    /// <summary>
+    /// Client that sends messages to an Incoming WebHook Slack integration.
+    /// </summary>
     public class WebHookClient : IWebHookClient
     {
         private readonly string _webhookUrl;
 
+        /// <summary>
+        /// Initializes a WebHookClient with a endpoint url created via Slack's Incoming WebHook intergrations.
+        /// </summary>
         public WebHookClient(string webhookUrl)
         {
             _webhookUrl = webhookUrl;
         }
 
+        /// <summary>
+        /// Sends a message to the client's WebHook endpoint.
+        /// </summary>
+        /// <returns>True if message was successfully submitted, false otherwise.</returns>
         public bool SendMessage([NotNull] Message message)
         {
             var json = JsonConvert.SerializeObject(message);
             return SendPostRequest(json);
         }
 
+        /// <summary>
+        /// Asynchronously sends a message to the client's WebHook endpoint.
+        /// </summary>
+        /// <returns>True if message was successfully submitted, false otherwise.</returns>
         public Task<bool> SendMessageAsync(Message message)
         {
             var json = JsonConvert.SerializeObject(message);

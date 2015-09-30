@@ -5,6 +5,9 @@ using SlackWebHooks.Extensions;
 
 namespace SlackWebHooks
 {
+    /// <summary>
+    /// Message that can be sent to a slack channel via Incoming WebHook integrations.
+    /// </summary>
     public class Message
     {
         /// <summary>
@@ -37,7 +40,9 @@ namespace SlackWebHooks
         [JsonProperty(PropertyName = "channel", NullValueHandling = NullValueHandling.Ignore)]
         public string Channel { get; }
 
-        [JsonConstructor]
+        /// <summary>
+        /// Initializes a message with the given parameters.
+        /// </summary>
         public Message([NotNull] string text, string username = null, string icon = null, string channel = null)
         {
             Text = text;
