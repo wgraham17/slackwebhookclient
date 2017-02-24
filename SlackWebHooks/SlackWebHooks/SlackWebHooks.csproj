@@ -10,6 +10,7 @@
     <PackageLicenseUrl>https://github.com/wgraham17/slackwebhookclient/blob/master/LICENSE.md</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/wgraham17/slackwebhookclient</PackageProjectUrl>
     <PackageTags>slack web hook</PackageTags>
+    <Version>1.0.4</Version>
   </PropertyGroup>
 
   <ItemGroup>
