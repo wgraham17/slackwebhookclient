@@ -1,26 +1,46 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26206.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlackWebHooks.Tests", "SlackWebHooks.Tests\SlackWebHooks.Tests.csproj", "{5FCD2F2D-BF8D-4268-8DDC-FBD0CBE5962F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SlackWebHooks", "SlackWebHooks\SlackWebHooks.csproj", "{B5E619C4-F833-425E-A3A9-D32626CFBD6E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlackWebHooks", "SlackWebHooks\SlackWebHooks.csproj", "{D1746C04-DD50-4087-B6D4-AE9283A07423}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlackWebHooks.Tests", "SlackWebHooks.Tests\SlackWebHooks.Tests.csproj", "{93BF980A-48A2-4FD9-AC97-5F4AC8AAE814}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5FCD2F2D-BF8D-4268-8DDC-FBD0CBE5962F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5FCD2F2D-BF8D-4268-8DDC-FBD0CBE5962F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5FCD2F2D-BF8D-4268-8DDC-FBD0CBE5962F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5FCD2F2D-BF8D-4268-8DDC-FBD0CBE5962F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D1746C04-DD50-4087-B6D4-AE9283A07423}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D1746C04-DD50-4087-B6D4-AE9283A07423}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D1746C04-DD50-4087-B6D4-AE9283A07423}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D1746C04-DD50-4087-B6D4-AE9283A07423}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5E619C4-F833-425E-A3A9-D32626CFBD6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5E619C4-F833-425E-A3A9-D32626CFBD6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5E619C4-F833-425E-A3A9-D32626CFBD6E}.Debug|x64.ActiveCfg = Debug|x64
+		{B5E619C4-F833-425E-A3A9-D32626CFBD6E}.Debug|x64.Build.0 = Debug|x64
+		{B5E619C4-F833-425E-A3A9-D32626CFBD6E}.Debug|x86.ActiveCfg = Debug|x86
+		{B5E619C4-F833-425E-A3A9-D32626CFBD6E}.Debug|x86.Build.0 = Debug|x86
+		{B5E619C4-F833-425E-A3A9-D32626CFBD6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5E619C4-F833-425E-A3A9-D32626CFBD6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5E619C4-F833-425E-A3A9-D32626CFBD6E}.Release|x64.ActiveCfg = Release|x64
+		{B5E619C4-F833-425E-A3A9-D32626CFBD6E}.Release|x64.Build.0 = Release|x64
+		{B5E619C4-F833-425E-A3A9-D32626CFBD6E}.Release|x86.ActiveCfg = Release|x86
+		{B5E619C4-F833-425E-A3A9-D32626CFBD6E}.Release|x86.Build.0 = Release|x86
+		{93BF980A-48A2-4FD9-AC97-5F4AC8AAE814}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93BF980A-48A2-4FD9-AC97-5F4AC8AAE814}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93BF980A-48A2-4FD9-AC97-5F4AC8AAE814}.Debug|x64.ActiveCfg = Debug|x64
+		{93BF980A-48A2-4FD9-AC97-5F4AC8AAE814}.Debug|x64.Build.0 = Debug|x64
+		{93BF980A-48A2-4FD9-AC97-5F4AC8AAE814}.Debug|x86.ActiveCfg = Debug|x86
+		{93BF980A-48A2-4FD9-AC97-5F4AC8AAE814}.Debug|x86.Build.0 = Debug|x86
+		{93BF980A-48A2-4FD9-AC97-5F4AC8AAE814}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93BF980A-48A2-4FD9-AC97-5F4AC8AAE814}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93BF980A-48A2-4FD9-AC97-5F4AC8AAE814}.Release|x64.ActiveCfg = Release|x64
+		{93BF980A-48A2-4FD9-AC97-5F4AC8AAE814}.Release|x64.Build.0 = Release|x64
+		{93BF980A-48A2-4FD9-AC97-5F4AC8AAE814}.Release|x86.ActiveCfg = Release|x86
+		{93BF980A-48A2-4FD9-AC97-5F4AC8AAE814}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

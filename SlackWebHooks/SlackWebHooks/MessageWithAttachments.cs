@@ -86,11 +86,11 @@ namespace SlackWebHooks
             // check color
             if (!string.IsNullOrWhiteSpace(color))
             {
-                if (Good.Equals(color, StringComparison.InvariantCultureIgnoreCase))
+                if (Good.Equals(color, StringComparison.OrdinalIgnoreCase))
                     Color = Good;
-                else if (Warning.Equals(color, StringComparison.InvariantCultureIgnoreCase))
+                else if (Warning.Equals(color, StringComparison.OrdinalIgnoreCase))
                     Color = Warning;
-                else if (Danger.Equals(color, StringComparison.InvariantCultureIgnoreCase))
+                else if (Danger.Equals(color, StringComparison.OrdinalIgnoreCase))
                     Color = Danger;
                 else if (color.IsValidHexColor())
                     Color = color;
