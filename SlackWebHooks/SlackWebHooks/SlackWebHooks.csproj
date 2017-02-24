@@ -2,6 +2,14 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.1</TargetFramework>
+    <PackageId>SlackWebHooksNet</PackageId>
+    <Authors>https://github.com/wgraham17; https://bitbucket.org/sds88</Authors>
+    <Company />
+    <Product>SlackWebHooks .NET Standard</Product>
+    <Description>A simple library to push rich messages to a Slack incoming web hook from .NET applications.</Description>
+    <PackageLicenseUrl>https://github.com/wgraham17/slackwebhookclient/blob/master/LICENSE.md</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/wgraham17/slackwebhookclient</PackageProjectUrl>
+    <PackageTags>slack web hook</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
