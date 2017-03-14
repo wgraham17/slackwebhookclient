@@ -1,17 +1,17 @@
-﻿using System;
-using System.Threading.Tasks;
-using NUnit.Framework;
-
-namespace SlackWebHooks.Tests
+﻿namespace SlackWebHooks.Tests
 {
-    [TestFixture]
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using System;
+    using System.Threading.Tasks;
+
+    [TestClass]
     public class WebHookClientAsyncTests
     {
-        private const string HookUrl = "https://hooks.slack.com/services/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";
+        private const string HookUrl = "https://hooks.slack.com/services/replaceme";
         private const string IconUrl = "https://slack.com/img/icons/app-57.png";
         private const string Emoji = ":scream:";
 
-        [Test]
+        [TestMethod]
         public async Task SendMessageAsync_Test()
         {
             var client = new WebHookClient(HookUrl);
@@ -19,7 +19,7 @@ namespace SlackWebHooks.Tests
             await client.SendMessageAsync(message);
         }
 
-        [Test]
+        [TestMethod]
         public async Task SendMessageAsync_WithUsernameTest()
         {
             var client = new WebHookClient(HookUrl);
@@ -27,7 +27,7 @@ namespace SlackWebHooks.Tests
             await client.SendMessageAsync(message);
         }
 
-        [Test]
+        [TestMethod]
         public async Task SendMessageAsync_WithIconUrl()
         {
             var client = new WebHookClient(HookUrl);
@@ -35,7 +35,7 @@ namespace SlackWebHooks.Tests
             await client.SendMessageAsync(message);
         }
 
-        [Test]
+        [TestMethod]
         public async Task SendMessageAsync_WithIconEmoji()
         {
             var client = new WebHookClient(HookUrl);

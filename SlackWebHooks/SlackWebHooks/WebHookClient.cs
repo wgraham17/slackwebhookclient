@@ -36,7 +36,7 @@ namespace SlackWebHooks
         private async Task<bool> SendPostRequestAsync(string json)
         {
             var httpMessage = new HttpRequestMessage(HttpMethod.Post, _webhookUrl);
-            httpMessage.Content = new StringContent(json, Encoding.Unicode, "application/json");
+            httpMessage.Content = new StringContent(json, Encoding.UTF8, "application/json");
 
             var httpResponse = await _httpClient.SendAsync(httpMessage);
             return httpResponse.IsSuccessStatusCode;

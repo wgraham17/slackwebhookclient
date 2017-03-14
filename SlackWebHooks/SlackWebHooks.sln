@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26206.0
+VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SlackWebHooks", "SlackWebHooks\SlackWebHooks.csproj", "{B5E619C4-F833-425E-A3A9-D32626CFBD6E}"
 EndProject
@@ -19,28 +19,28 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{B5E619C4-F833-425E-A3A9-D32626CFBD6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B5E619C4-F833-425E-A3A9-D32626CFBD6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B5E619C4-F833-425E-A3A9-D32626CFBD6E}.Debug|x64.ActiveCfg = Debug|x64
-		{B5E619C4-F833-425E-A3A9-D32626CFBD6E}.Debug|x64.Build.0 = Debug|x64
-		{B5E619C4-F833-425E-A3A9-D32626CFBD6E}.Debug|x86.ActiveCfg = Debug|x86
-		{B5E619C4-F833-425E-A3A9-D32626CFBD6E}.Debug|x86.Build.0 = Debug|x86
+		{B5E619C4-F833-425E-A3A9-D32626CFBD6E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B5E619C4-F833-425E-A3A9-D32626CFBD6E}.Debug|x64.Build.0 = Debug|Any CPU
+		{B5E619C4-F833-425E-A3A9-D32626CFBD6E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B5E619C4-F833-425E-A3A9-D32626CFBD6E}.Debug|x86.Build.0 = Debug|Any CPU
 		{B5E619C4-F833-425E-A3A9-D32626CFBD6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5E619C4-F833-425E-A3A9-D32626CFBD6E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B5E619C4-F833-425E-A3A9-D32626CFBD6E}.Release|x64.ActiveCfg = Release|x64
-		{B5E619C4-F833-425E-A3A9-D32626CFBD6E}.Release|x64.Build.0 = Release|x64
-		{B5E619C4-F833-425E-A3A9-D32626CFBD6E}.Release|x86.ActiveCfg = Release|x86
-		{B5E619C4-F833-425E-A3A9-D32626CFBD6E}.Release|x86.Build.0 = Release|x86
+		{B5E619C4-F833-425E-A3A9-D32626CFBD6E}.Release|x64.ActiveCfg = Release|Any CPU
+		{B5E619C4-F833-425E-A3A9-D32626CFBD6E}.Release|x64.Build.0 = Release|Any CPU
+		{B5E619C4-F833-425E-A3A9-D32626CFBD6E}.Release|x86.ActiveCfg = Release|Any CPU
+		{B5E619C4-F833-425E-A3A9-D32626CFBD6E}.Release|x86.Build.0 = Release|Any CPU
 		{93BF980A-48A2-4FD9-AC97-5F4AC8AAE814}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{93BF980A-48A2-4FD9-AC97-5F4AC8AAE814}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{93BF980A-48A2-4FD9-AC97-5F4AC8AAE814}.Debug|x64.ActiveCfg = Debug|x64
-		{93BF980A-48A2-4FD9-AC97-5F4AC8AAE814}.Debug|x64.Build.0 = Debug|x64
-		{93BF980A-48A2-4FD9-AC97-5F4AC8AAE814}.Debug|x86.ActiveCfg = Debug|x86
-		{93BF980A-48A2-4FD9-AC97-5F4AC8AAE814}.Debug|x86.Build.0 = Debug|x86
+		{93BF980A-48A2-4FD9-AC97-5F4AC8AAE814}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{93BF980A-48A2-4FD9-AC97-5F4AC8AAE814}.Debug|x64.Build.0 = Debug|Any CPU
+		{93BF980A-48A2-4FD9-AC97-5F4AC8AAE814}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{93BF980A-48A2-4FD9-AC97-5F4AC8AAE814}.Debug|x86.Build.0 = Debug|Any CPU
 		{93BF980A-48A2-4FD9-AC97-5F4AC8AAE814}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93BF980A-48A2-4FD9-AC97-5F4AC8AAE814}.Release|Any CPU.Build.0 = Release|Any CPU
-		{93BF980A-48A2-4FD9-AC97-5F4AC8AAE814}.Release|x64.ActiveCfg = Release|x64
-		{93BF980A-48A2-4FD9-AC97-5F4AC8AAE814}.Release|x64.Build.0 = Release|x64
-		{93BF980A-48A2-4FD9-AC97-5F4AC8AAE814}.Release|x86.ActiveCfg = Release|x86
-		{93BF980A-48A2-4FD9-AC97-5F4AC8AAE814}.Release|x86.Build.0 = Release|x86
+		{93BF980A-48A2-4FD9-AC97-5F4AC8AAE814}.Release|x64.ActiveCfg = Release|Any CPU
+		{93BF980A-48A2-4FD9-AC97-5F4AC8AAE814}.Release|x64.Build.0 = Release|Any CPU
+		{93BF980A-48A2-4FD9-AC97-5F4AC8AAE814}.Release|x86.ActiveCfg = Release|Any CPU
+		{93BF980A-48A2-4FD9-AC97-5F4AC8AAE814}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

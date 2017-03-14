@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.1</TargetFramework>
-    <PackageId>SlackWebHooksNet</PackageId>
+    <PackageId>SlackWebHooks</PackageId>
     <Authors>https://github.com/wgraham17; https://bitbucket.org/sds88</Authors>
     <Company />
     <Product>SlackWebHooks .NET Standard</Product>
